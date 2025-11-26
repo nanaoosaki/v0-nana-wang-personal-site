@@ -2,6 +2,8 @@
 
 import { useState, useEffect } from "react"
 import Link from "next/link"
+import { Mail, Linkedin, Github } from "lucide-react"
+import Image from "next/image"
 
 export default function Hero() {
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 })
@@ -34,9 +36,39 @@ export default function Hero() {
         {/* Left Column */}
         <div className="space-y-8">
           <div>
-            <h1 className="text-6xl md:text-7xl font-bold leading-tight mb-4 tracking-tight text-foreground">
-              Nana Wang
-            </h1>
+            <div className="flex items-center gap-4 mb-4">
+              <h1 className="text-6xl md:text-7xl font-bold leading-tight tracking-tight text-foreground">
+                Nana Wang
+              </h1>
+              {/* Contact Icons */}
+              <div className="flex gap-3 items-center">
+                <a
+                  href="https://www.linkedin.com/in/nana-wang-00593465/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-accent hover:text-accent-secondary transition-colors"
+                  aria-label="LinkedIn"
+                >
+                  <Linkedin size={28} />
+                </a>
+                <a
+                  href="https://github.com/nanaoosaki"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-accent hover:text-accent-secondary transition-colors"
+                  aria-label="GitHub"
+                >
+                  <Github size={28} />
+                </a>
+                <a
+                  href="mailto:nwangwk@gmail.com"
+                  className="text-accent hover:text-accent-secondary transition-colors"
+                  aria-label="Email"
+                >
+                  <Mail size={28} />
+                </a>
+              </div>
+            </div>
             <p className="text-xl md:text-2xl text-accent font-semibold tracking-wide mb-4">AI BUILDER & STRATEGIST</p>
             <p className="text-lg text-muted leading-relaxed max-w-md">
               I'm a visionary AI builder and strategist with an innovative approach to bridging technology, data, and business. I envision AI solutions that transform possibilities into realities, crafting intelligent systems that pioneer new frontiers in human-AI collaboration.
@@ -92,11 +124,15 @@ export default function Hero() {
               className="absolute inset-4 rounded-full border border-accent-secondary/20 animate-spin"
               style={{ animationDirection: "reverse", animationDuration: "30s" }}
             />
-            {/* Light gradient medallion */}
-            <div className="relative w-64 h-64 rounded-full overflow-hidden bg-gradient-to-br from-[#F4FBFD] to-accent-secondary/20 border-2 border-accent-secondary/60 flex items-center justify-center shadow-sm">
-              <div className="text-center text-foreground">
-                <div className="text-5xl font-bold">NW</div>
-              </div>
+            {/* Profile Image */}
+            <div className="relative w-64 h-64 rounded-full overflow-hidden border-2 border-accent-secondary/60 shadow-sm">
+              <Image
+                src="/profile-nana.jpg"
+                alt="Nana Wang - AI Builder & Strategist"
+                fill
+                className="object-cover"
+                priority
+              />
             </div>
           </div>
 
