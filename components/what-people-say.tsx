@@ -4,34 +4,27 @@ export default function WhatPeopleSay() {
   const testimonials = [
     {
       quote:
-        "Nana's ability to translate complex AI concepts into actionable business strategy is unmatched. A true strategic thinker.",
-      name: "Sarah Chen",
-      role: "CEO, Tech Startup",
+        "Nana is an expert in her field and constantly pushing the boundaries of what can be done. She's quick to help others and offers good advice. She is very smart and has a strong desire to be better at her job. She asks for feedback often and makes changes based on it.",
+      role: "Supervisor",
     },
     {
-      quote: "Working with Nana on our LLM implementation was transformative. The technical execution was flawless.",
-      name: "James Rodriguez",
-      role: "CTO, Enterprise AI",
+      quote:
+        "Nana is the real starter who thinks outside of the box and challenges others. She is remarkably intelligent and a great coworker. She is the one person on our team willing to ask hard questions, and I seen it as a quiet but confident leader among her peers.",
+      role: "Colleague",
     },
     {
-      quote: "Nana brings both deep technical expertise and strategic vision to every project. Rare combination.",
-      name: "Dr. Michael Park",
-      role: "Colleague, Research Lab",
+      quote:
+        "She very well understands her professional domain and opportunity for contribution to the wider organization. She communicates problems in a clear and thoughtful way - careful to understand the general so she doesn't narrow context. She is transparent with her work and thinking and regularly seeks input, earnestly incorporating feedback into her work and process.",
+      role: "Colleague",
     },
     {
-      quote: "The insights from Nana's work fundamentally changed how we approach AI governance.",
-      name: "Emma Thompson",
-      role: "Policy Director",
+      quote:
+        "She cares about understanding the business needs and effectively collaborating with business stakeholders to ensure a data science solution is actionable.",
+      role: "Colleague",
     },
     {
-      quote: "Exceptional at connecting research to real-world impact. Every collaboration leaves us better prepared.",
-      name: "David Kumar",
-      role: "Product Lead",
-    },
-    {
-      quote: "A rare combination of technical depth and human-centered thinking. Transformative to work with.",
-      name: "Lisa Chen",
-      role: "Co-founder, AI Ethics Lab",
+      quote: "Nana's energy and attitude always inspired people to push harder, no matter how big or small the problem or idea.",
+      role: "Colleague",
     },
   ]
 
@@ -69,9 +62,6 @@ export default function WhatPeopleSay() {
 
               {/* Attribution */}
               <div>
-                <p className="font-semibold text-sm" style={{ color: "#132128" }}>
-                  {testimonial.name}
-                </p>
                 <p className="text-sm" style={{ color: "#2C7C87" }}>
                   {testimonial.role}
                 </p>

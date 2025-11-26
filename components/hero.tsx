@@ -39,8 +39,16 @@ export default function Hero() {
             </h1>
             <p className="text-xl md:text-2xl text-accent font-semibold tracking-wide mb-4">AI BUILDER & STRATEGIST</p>
             <p className="text-lg text-muted leading-relaxed max-w-md">
-              I build AI experiments that turn messy reality into real tools.
+              I'm a visionary AI builder and strategist with an innovative approach to bridging technology, data, and business. I envision AI solutions that transform possibilities into realities, crafting intelligent systems that pioneer new frontiers in human-AI collaboration.
             </p>
+            <div className="mt-6 space-y-2">
+              <p className="text-base text-muted font-semibold">My three superpowers:</p>
+              <ul className="text-base text-muted space-y-1 list-none">
+                <li>• <strong>Analytical rigor</strong></li>
+                <li>• <strong>Hands-on AI engineering</strong></li>
+                <li>• <strong>Proactive communication style + people-connecting</strong></li>
+              </ul>
+            </div>
           </div>
 
           {/* CTA Buttons */}

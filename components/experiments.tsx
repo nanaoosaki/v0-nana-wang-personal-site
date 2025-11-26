@@ -3,31 +3,28 @@
 export default function Experiments() {
   const experiments = [
     {
-      title: "LLM-powered Call Resolution Analytics",
-      subtitle: "Enterprise AI Agent Coaching Tool",
-      impact: "Reduced resolution time by 40% for support teams",
-      experimental: "Real-time LLM analysis of call transcripts",
-      tags: ["LLM", "Analytics", "Enterprise"],
-      status: "Live",
-      type: "Enterprise",
+      title: "LLM-powered Call Resolution Analytics and Agent Coaching Tool",
+      subtitle: "Enterprise AI",
+      description: "Enterprise-level AI system using LLM to analyze raw call transcripts, measure call resolution effectiveness, and distill actionable 'why' insights for customer support teams and agent coaching programs.",
+      tags: ["Enterprise AI", "LLM Analytics", "Call Analytics", "Customer Support", "Agent Coaching"],
+      status: "Enterprise Project",
+      link: "#",
     },
     {
       title: "Resume Parsing & Tailoring Tool",
-      subtitle: "AI-powered career assistant",
-      impact: "Helped 500+ users land interviews faster",
-      experimental: "Semantic understanding + dynamic customization",
-      tags: ["NLP", "Career", "Personalization"],
+      subtitle: "LLM & GenAI",
+      description: "LLM & GenAI powered tool for resume optimization",
+      tags: ["LLM", "GenAI", "Python"],
       status: "Live",
-      type: "Personal",
+      link: "https://jobsculptor.ai/",
     },
     {
-      title: "Linda – Your Daily Health Companion",
-      subtitle: "Personal health tracking with AI insights",
-      impact: "Users tracked health metrics 3x more consistently",
-      experimental: "Context-aware health coaching via AI",
-      tags: ["Health", "AI", "Wellness"],
-      status: "Prototype",
-      type: "Health",
+      title: "Linda - Your Daily Health Companion",
+      subtitle: "Health AI",
+      description: "The first AI assistant that listens to your days, spots personal triggers for chronic pain, and coaches you towards fewer and milder attacks. Built around three core actions: Talk – foregrounds the voice-first, conversation-driven flow; Track – reassures data seekers that you still log and analyse; Tame – promises action and improvement, not just monitoring.",
+      tags: ["Health AI", "Voice Interface", "Pain Management", "Personal Coach", "Chronic Care"],
+      status: "Demo",
+      link: "https://lindahealth.app/",
     },
   ]
 
@@ -54,7 +51,7 @@ export default function Experiments() {
               <div className="p-6 space-y-4">
                 {/* Type & Status */}
                 <div className="flex justify-between items-start gap-2">
-                  <span className="text-xs font-mono text-accent/80 bg-accent/10 px-2 py-1 rounded">{exp.type}</span>
+                  <span className="text-xs font-mono text-accent/80 bg-accent/10 px-2 py-1 rounded">{exp.subtitle}</span>
                   <span className="text-xs font-mono text-accent-secondary/80 bg-accent-secondary/10 px-2 py-1 rounded">
                     {exp.status}
                   </span>
@@ -62,15 +59,11 @@ export default function Experiments() {
 
                 {/* Title */}
                 <div>
-                  <h3 className="text-lg font-bold text-foreground mb-1">{exp.title}</h3>
-                  <p className="text-sm text-muted">{exp.subtitle}</p>
+                  <h3 className="text-lg font-bold text-foreground mb-3">{exp.title}</h3>
                 </div>
 
-                {/* Impact */}
-                <p className="text-base text-accent font-medium">{exp.impact}</p>
-
-                {/* Experimental angle */}
-                <p className="text-sm text-muted italic">{exp.experimental}</p>
+                {/* Description */}
+                <p className="text-sm text-muted leading-relaxed">{exp.description}</p>
 
                 {/* Tags */}
                 <div className="flex flex-wrap gap-2 pt-2">
@@ -85,9 +78,20 @@ export default function Experiments() {
                 </div>
 
                 {/* CTA */}
-                <button className="w-full mt-4 px-4 py-2 border border-accent text-accent text-sm font-semibold rounded hover:bg-accent/10 transition-colors duration-300">
-                  View project →
-                </button>
+                {exp.link !== "#" ? (
+                  <a
+                    href={exp.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block w-full mt-4 px-4 py-2 border border-accent text-accent text-sm font-semibold rounded hover:bg-accent/10 transition-colors duration-300 text-center"
+                  >
+                    {exp.status === "Live" ? "Try it Live" : exp.status === "Demo" ? "View Demo" : "View project"} →
+                  </a>
+                ) : (
+                  <div className="w-full mt-4 px-4 py-2 text-muted text-sm text-center">
+                    Enterprise Project
+                  </div>
+                )}
               </div>
             </div>
           ))}

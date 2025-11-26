@@ -5,44 +5,38 @@ import { useState } from "react"
 const writingData = {
   "English – Professional": [
     {
-      title: "The Future of Agentic AI in Enterprise",
+      title: "You've Got a Shiny AI Hammer—But Are You Hitting the Right Nails?",
       platform: "LinkedIn",
-      date: "Recent",
-      hook: "Why the next wave of AI won't be about models, but about agents that actually ship.",
+      date: "March 25, 2025",
+      link: "https://www.linkedin.com/pulse/unlocking-call-analytics-beyond-traditional-methods-llms-nana-wang-4wefe/",
     },
     {
-      title: "Building Scalable LLM Systems",
-      platform: "Superlinear",
-      date: "2 weeks ago",
-      hook: "From prototype to production: patterns I've learned shipping LLM systems at scale.",
-    },
-    {
-      title: "AI Strategy: From Experimentation to Production",
+      title: "How to Design LLM-Powered Expert Decision Applications",
       platform: "LinkedIn",
-      date: "1 month ago",
-      hook: "How to think about AI strategy when everything is moving at light speed.",
+      date: "April 14, 2025",
+      link: "https://www.linkedin.com/pulse/how-design-llm-powered-expert-decision-applications-conceptual-wang-ettge/",
     },
   ],
   "Chinese – Tech & Vibe": [
     {
-      title: "如何构建可扩展的 AI 系统",
-      platform: "Substack",
+      title: "Cursor AGI - AI编程工具体验与思考",
+      platform: "Superlinear Academy",
       date: "Recent",
-      hook: "关于 LLM 系统架构和实战经验",
+      link: "https://www.superlinear.academy/c/share-your-work/cursor-agi",
     },
     {
-      title: "大语言模型的实战应用",
-      platform: "Medium",
-      date: "3 weeks ago",
-      hook: "从研究到产品：大模型如何落地",
+      title: "AI Vibe Coding - 与AI协作编程的艺术",
+      platform: "Superlinear Academy",
+      date: "Recent",
+      link: "https://www.superlinear.academy/c/share-your-work/ai-vibe-coding-a90fd2",
     },
   ],
   "Chinese – Life": [
     {
-      title: "关于平衡、学习和成长的思考",
+      title: "Coming soon - personal reflections and life experiences in Chinese.",
       platform: "Personal Blog",
-      date: "Recent",
-      hook: "How to stay curious while staying sane.",
+      date: "Coming soon",
+      link: "#",
     },
   ],
 }
@@ -97,13 +91,19 @@ export default function Writing() {
                 {article.title}
               </h3>
 
-              {/* Hook */}
-              <p className="text-sm text-muted leading-relaxed mb-4">{article.hook}</p>
-
               {/* CTA */}
-              <button className="text-accent text-sm font-semibold hover:text-accent-secondary transition-colors">
-                Read article →
-              </button>
+              {article.link !== "#" ? (
+                <a
+                  href={article.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-accent text-sm font-semibold hover:text-accent-secondary transition-colors"
+                >
+                  Read article →
+                </a>
+              ) : (
+                <span className="text-muted text-sm italic">Coming soon</span>
+              )}
             </div>
           ))}
         </div>
