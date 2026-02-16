@@ -97,6 +97,12 @@ export default function Hero() {
             >
               Work with me
             </Link>
+            <Link
+              href="#writing"
+              className="px-8 py-3 border-2 border-accent text-accent font-semibold rounded-lg hover:bg-accent/10 transition-colors duration-300 inline-block"
+            >
+              Read my writing
+            </Link>
           </div>
 
           {/* Signature Tags */}
