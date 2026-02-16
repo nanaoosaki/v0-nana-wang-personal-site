@@ -11,12 +11,12 @@ export default function Experiments() {
       link: "#",
     },
     {
-      title: "Resume Parsing & Tailoring Tool",
-      subtitle: "LLM & GenAI",
-      description: "LLM & GenAI powered tool for resume optimization",
-      tags: ["LLM", "GenAI", "Python"],
-      status: "Live",
-      link: "https://jobsculptor.ai/",
+      title: "RAG-powered CX Intelligence Assistant",
+      subtitle: "Enterprise AI",
+      description: "Led innovation of a RAG-powered CX Intelligence Assistant to democratize insights across research and CX. Built a CX research chatbot that reduced qualitative analysis against customer surveys from days to minutes, using hybrid search architecture with cross-encoder reranking and a metadata-aware query rewriting layer for higher precision and retrieval relevance.",
+      tags: ["RAG", "LLM", "Hybrid Search", "Cross-Encoder", "CX Analytics"],
+      status: "Enterprise Project",
+      link: "#",
     },
     {
       title: "Linda - Your Daily Health Companion",

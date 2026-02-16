@@ -23,12 +23,13 @@ const projects = [
     image: "/health-app-interface.jpg",
   },
   {
-    badge: "Personal",
-    title: "Resume Parsing & Tailoring Tool",
-    description: "jobsculptor.ai - Intelligent resume optimization for job applications",
-    tags: ["NLP", "Career", "SaaS"],
-    cta: "Try it live",
-    image: "/resume-tool-interface.jpg",
+    badge: "Enterprise",
+    title: "RAG-powered CX Intelligence Assistant",
+    description:
+      "CX research chatbot that reduced qualitative analysis from days to minutes using hybrid search and cross-encoder reranking",
+    tags: ["RAG", "LLM", "Hybrid Search"],
+    cta: "View demo",
+    image: "/enterprise-ai-dashboard.jpg",
   },
   {
     badge: "Enterprise",
