@@ -2,7 +2,6 @@
 
 import Header from "@/components/header"
 import Hero from "@/components/hero"
-import OperatingModes from "@/components/operating-modes"
 import WhatPeopleSay from "@/components/what-people-say"
 import Experiments from "@/components/experiments"
 import Writing from "@/components/writing"
@@ -16,7 +15,6 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
-        <OperatingModes />
         <WhatPeopleSay />
         <Experiments />
         <Writing />
