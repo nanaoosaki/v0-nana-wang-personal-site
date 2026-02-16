@@ -28,13 +28,13 @@ export default function Header() {
         {/* Desktop Navigation */}
         <div className="hidden md:flex gap-8 text-sm">
           {navItems.map((item) => (
-            <Link
+            <a
               key={item.label}
               href={item.href}
               className="text-muted hover:text-accent transition-colors duration-300 font-medium"
             >
               {item.label}
-            </Link>
+            </a>
           ))}
         </div>
 
@@ -48,14 +48,14 @@ export default function Header() {
           <div className="absolute top-full left-0 right-0 bg-background/95 backdrop-blur-md border-b border-accent-secondary/30 md:hidden">
             <div className="flex flex-col gap-4 px-6 py-4">
               {navItems.map((item) => (
-                <Link
+                <a
                   key={item.label}
                   href={item.href}
                   className="text-sm text-muted hover:text-accent transition-colors duration-300 font-medium"
                   onClick={() => setIsOpen(false)}
                 >
                   {item.label}
-                </Link>
+                </a>
               ))}
             </div>
           </div>

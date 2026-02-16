@@ -1,7 +1,6 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import Link from "next/link"
 import { Mail, Linkedin, Github } from "lucide-react"
 import Image from "next/image"
 
@@ -85,24 +84,24 @@ export default function Hero() {
 
           {/* CTA Buttons */}
           <div className="flex flex-wrap gap-4">
-            <Link
+            <a
               href="#experiments"
               className="px-8 py-3 bg-accent text-white font-semibold rounded-lg hover:shadow-lg hover:shadow-accent/30 transition-all duration-300 inline-block"
             >
               Explore my experiments
-            </Link>
-            <Link
+            </a>
+            <a
               href="#contact"
               className="px-8 py-3 border-2 border-accent text-accent font-semibold rounded-lg hover:bg-accent/10 transition-colors duration-300 inline-block"
             >
               Work with me
-            </Link>
-            <Link
+            </a>
+            <a
               href="#writing"
               className="px-8 py-3 border-2 border-accent text-accent font-semibold rounded-lg hover:bg-accent/10 transition-colors duration-300 inline-block"
             >
               Read my writing
-            </Link>
+            </a>
           </div>
 
           {/* Signature Tags */}
