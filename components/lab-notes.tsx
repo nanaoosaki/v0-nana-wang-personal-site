@@ -2,6 +2,13 @@
 
 const notes = [
   {
+    title: "Beyond Notebooks: Text-to-SQL Agent Failure Modes & Reflection Loops",
+    description:
+      "Studying how a simple text-to-SQL agent fails reveals that the real issues aren't syntax errors but contract problems — incomplete schema semantics, reasoning shortcuts, and lost traceability. Argues that output contracts and lightweight validators beat prompt rules for building durable, model-agnostic agent systems.",
+    stage: "Working theory",
+    link: "https://www.linkedin.com/posts/nana-wang-00593465_agentic-ai-deeplearningai-activity-7429529307053674496-hXzm",
+  },
+  {
     title: "Beyond Notebooks: Docker Debugging & Abstraction Layers",
     description:
       "A Docker debugging session revealed that a PostgreSQL authentication error was actually a port conflict hidden across abstraction layers. Explores how studying AI's reasoning path can sharpen our own engineering thinking.",
