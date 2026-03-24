@@ -5,6 +5,7 @@ const publicTools = [
     name: "LinkedIn Connections Exporter",
     category: "Chrome Extension",
     status: "Live (GitHub Release)",
+    logoUrl: "https://raw.githubusercontent.com/nanaoosaki/linkedin_connections/main/logo.png",
     description:
       "Runs inside the LinkedIn connections page, progressively loads all visible connections, extracts structured data from the DOM, and exports everything as a local CSV file.",
     techStack:
@@ -32,10 +33,15 @@ export default function PublicTools() {
               className="group p-6 bg-white border border-accent-secondary/40 rounded-lg hover:border-accent hover:shadow-md hover:shadow-accent/15 transition-all duration-300"
             >
               <div className="flex justify-between items-start gap-3 mb-4">
-                <span className="text-xs font-mono text-accent/80 bg-accent/10 px-2 py-1 rounded">{tool.category}</span>
-                <span className="text-xs font-mono text-accent-secondary/80 bg-accent-secondary/10 px-2 py-1 rounded">
-                  {tool.status}
-                </span>
+                <div className="flex items-center gap-3">
+                  <img
+                    src={tool.logoUrl}
+                    alt={`${tool.name} logo`}
+                    className="w-10 h-10 object-contain rounded border border-accent-secondary/30 bg-white p-1"
+                  />
+                  <span className="text-xs font-mono text-accent/80 bg-accent/10 px-2 py-1 rounded">{tool.category}</span>
+                </div>
+                <span className="text-xs font-mono text-accent-secondary/80 bg-accent-secondary/10 px-2 py-1 rounded">{tool.status}</span>
               </div>
 
               <h3 className="text-xl font-bold text-foreground mb-3 group-hover:text-accent transition-colors">{tool.name}</h3>

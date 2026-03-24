@@ -28,6 +28,10 @@
     - Back link to `/#public-tools`
     - Placeholder note for pending Chrome Web Store URL
 
+- Updated `components/public-tools.tsx` (follow-up UI improvement)
+  - Added the tool logo directly inside the Public Tools card header for faster visual recognition.
+  - Kept external logo source aligned with the repository logo URL used on the detail page.
+
 ### Issues / constraints encountered
 - Chrome Web Store URL is not available yet, so the detail page currently uses:
   - Repository URL
