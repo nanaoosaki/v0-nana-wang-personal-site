@@ -33,10 +33,10 @@ const writingData = {
   ],
   "Chinese – Life": [
     {
-      title: "Coming soon - personal reflections and life experiences in Chinese.",
-      platform: "Personal Blog",
-      date: "Coming soon",
-      link: "#",
+      title: "不是你在找工作，而是工作在找你 (you don't find the job, the job finds you)",
+      platform: "Superlinear Academy",
+      date: "Recent",
+      link: "https://www.superlinear.academy/c/posts/you-don-t-find-the-job-the-job-finds-you",
     },
   ],
 }

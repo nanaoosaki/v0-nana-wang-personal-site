@@ -44,3 +44,19 @@
 ### Follow-up TODOs
 - Add Chrome Web Store CTA once listing URL is ready.
 - Move tool promo images into `public/tools/linkedin-connections-exporter/` for stable first-party hosting.
+
+## 2026-03-24 — Content updates (writing + lab notes)
+
+### Structural/content changes made
+- Updated `components/writing.tsx`
+  - Replaced the placeholder item in `Chinese – Life` with a published article:
+    - Title: `不是你在找工作，而是工作在找你 (you don't find the job, the job finds you)`
+    - Link: Superlinear Academy post
+
+- Updated `components/lab-notes.tsx`
+  - Added two new Beyond Notebooks LinkedIn notes at the top of the notes array:
+    - Post #3: experimentation to engineering (observability/testing/deployment)
+    - Post #4: human-AI collaboration through the known/unknown quadrants
+
+### Issues / constraints encountered
+- No implementation blockers. Links were added using canonical post URLs (without tracking query parameters) for cleaner long-term references.

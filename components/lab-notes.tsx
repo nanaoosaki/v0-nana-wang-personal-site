@@ -2,6 +2,20 @@
 
 const notes = [
   {
+    title: "Beyond Notebooks: Human-AI Collaboration in Public Build",
+    description:
+      "Reflects on building a LinkedIn Connections Exporter and what it revealed about human-AI collaboration through known knowns, known unknowns, unknown knowns, and unknown unknowns. Shows how constraints, fixtures, and real-world validation shape better engineering decisions than code generation alone.",
+    stage: "Working theory",
+    link: "https://www.linkedin.com/posts/nana-wang-00593465_beyondnotebooks-publicbuild-share-7441833367169355776-t2Ve",
+  },
+  {
+    title: "Beyond Notebooks: From Experimentation to Engineering in AI",
+    description:
+      "Explores the mindset shift from notebook success to production-grade AI engineering with observability, regression testing, and deployment discipline. Emphasizes that reliable systems are defined by change-over-time resilience, not one-off correct outputs.",
+    stage: "Working theory",
+    link: "https://www.linkedin.com/posts/nana-wang-00593465_beyondnotebooks-aiengineering-systemdesign-activity-7430320961289175041-LTzD",
+  },
+  {
     title: "Beyond Notebooks: Text-to-SQL Agent Failure Modes & Reflection Loops",
     description:
       "Studying how a simple text-to-SQL agent fails reveals that the real issues aren't syntax errors but contract problems — incomplete schema semantics, reasoning shortcuts, and lost traceability. Argues that output contracts and lightweight validators beat prompt rules for building durable, model-agnostic agent systems.",
