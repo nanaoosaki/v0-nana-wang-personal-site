@@ -87,3 +87,13 @@
 ### Issues / constraints encountered
 - Requested “actual published date” ordering was not auto-derived because source pages did not provide structured publish dates in a machine-usable format during this update pass.
 - Applied manual latest-first ordering according to user-provided reference order.
+
+## 2026-03-24 — Header anchor fix for About navigation
+
+### Structural/content changes made
+- Updated `components/header.tsx`:
+  - Changed nav item target from `#about` to `#hero` for the `About` label.
+
+### Issues / constraints encountered
+- Root cause: the homepage currently does not render a section with `id="about"` in `app/page.tsx`, so `#about` had no in-page anchor target.
+- The dedicated `components/about.tsx` file exists in repo but is not currently mounted in the page composition.
