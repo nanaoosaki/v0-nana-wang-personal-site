@@ -60,3 +60,16 @@
 
 ### Issues / constraints encountered
 - No implementation blockers. Links were added using canonical post URLs (without tracking query parameters) for cleaner long-term references.
+
+## 2026-03-24 — Additional Chinese life writing updates
+
+### Structural/content changes made
+- Updated `components/writing.tsx` in the `Chinese – Life` category.
+  - Added four new published Superlinear Academy posts:
+    - Adult Learning 里最难的3点：Learn to Unlearn, RFR cycle, and Take it Slow
+    - 带还在咿呀学中文的老公重温97版《天龙八部》
+    - Keep Your Social Muscle Lean - 让我们用健身的心态来轻盈社交
+    - YC改简历-心得体会分享
+
+### Issues / constraints encountered
+- No implementation blockers. Added links exactly as provided by user for direct consistency with source URLs.
