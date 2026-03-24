@@ -73,3 +73,17 @@
 
 ### Issues / constraints encountered
 - No implementation blockers. Added links exactly as provided by user for direct consistency with source URLs.
+
+## 2026-03-24 — Writing section UX refactor (tabs -> 3 columns)
+
+### Structural/content changes made
+- Refactored `components/writing.tsx` to remove tab switching behavior.
+  - Previous UX: 3 tabs (`English – Professional`, `Chinese – Tech & Vibe`, `Chinese – Life`) with one active pane.
+  - New UX: 3-column layout showing all categories simultaneously for improved discoverability.
+- Added section subtitle clarifying that all published writing is shown.
+- Kept per-article card structure and external-link behavior unchanged.
+- Reordered `Chinese – Life` entries to prioritize newest-first based on user-provided sequence guidance (smallest index = latest).
+
+### Issues / constraints encountered
+- Requested “actual published date” ordering was not auto-derived because source pages did not provide structured publish dates in a machine-usable format during this update pass.
+- Applied manual latest-first ordering according to user-provided reference order.
