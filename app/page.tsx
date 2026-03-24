@@ -4,6 +4,7 @@ import Header from "@/components/header"
 import Hero from "@/components/hero"
 import WhatPeopleSay from "@/components/what-people-say"
 import Experiments from "@/components/experiments"
+import PublicTools from "@/components/public-tools"
 import Writing from "@/components/writing"
 import LabNotes from "@/components/lab-notes"
 import Contact from "@/components/contact"
@@ -17,6 +18,7 @@ export default function Home() {
         <Hero />
         <WhatPeopleSay />
         <Experiments />
+        <PublicTools />
         <Writing />
         <LabNotes />
         <Contact />
