@@ -10,7 +10,12 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "Nana Wang – AI Studio",
   description: "AI builder & strategist. Experiments, prototypes, and thinking-in-public from an AI research studio.",
-    generator: 'v0.app'
+  generator: "v0.app",
+  icons: {
+    icon: "/profile-nana.jpg",
+    shortcut: "/profile-nana.jpg",
+    apple: "/profile-nana.jpg",
+  },
 }
 
 export default function RootLayout({
