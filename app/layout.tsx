@@ -12,9 +12,9 @@ export const metadata: Metadata = {
   description: "AI builder & strategist. Experiments, prototypes, and thinking-in-public from an AI research studio.",
   generator: "v0.app",
   icons: {
-    icon: "/profile-nana.jpg",
-    shortcut: "/profile-nana.jpg",
-    apple: "/profile-nana.jpg",
+    icon: "/favicon-profile-circle.png",
+    shortcut: "/favicon-profile-circle-32.png",
+    apple: "/favicon-profile-circle.png",
   },
 }
 
